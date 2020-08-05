@@ -1,0 +1,12 @@
+# virtual enviroment
+venv
+
+# Personal information
+docs
+
+# Jupyter notebooks
+.ipynb_checkpoints
+
+# PyCharm
+.idea
+
