@@ -30,14 +30,14 @@ Generate traffic accidents' heatmap
 python -m mc_map_generator heatmap
 ```
 
+# Execution using apache-airflow
+
 ## Start a postgres instance
 
 To run the app in development mode, execute:
 ```bash
 docker run --name postgres_db2 -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=airflow -p 5432:5432 -d postgres
 ```
-
-# Execution using apache-airflow
 
 ## Start the web server and scheduler
 ```bash
