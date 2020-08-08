@@ -37,7 +37,8 @@ class Controller:
         data['RANGO HORARIO'] = data['RANGO HORARIO'].apply(lambda row: self.processor.fix_hour(row))
         return data
 
-    def save_data(self, data):
+    @staticmethod
+    def save_data(data):
         data.to_csv('./traffic_accidents/resources/processed_data/processed_data_2018.csv',
                     sep=';',
                     header=True,
