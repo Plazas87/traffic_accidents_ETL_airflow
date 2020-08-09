@@ -57,7 +57,7 @@ t1 = PythonOperator(
 )
 
 t2 = PythonOperator(
-    task_id='generates_heatmap',
+    task_id='create_heatmap',
     provide_context=True,
     python_callable=generates_heatmap,
     dag=dag
@@ -65,7 +65,7 @@ t2 = PythonOperator(
 
 
 t3 = PythonOperator(
-    task_id='generate_stdmap',
+    task_id='create_stdmap',
     provide_context=True,
     python_callable=generates_stdmap,
     dag=dag
